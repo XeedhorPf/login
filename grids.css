@@ -1,0 +1,79 @@
+.container {
+
+    background: linear-gradient(to right, #89253e, #3a6186);
+    border: 5px solid #000;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-auto-rows: 200px;
+    grid-template-areas: "main1 header header"
+        "side side main"
+        "main2 main3 main4";
+    justify-content: center;
+}
+
+.item {
+    border: 2px solid #000;
+    font-size: 4rem;
+    background-color: aqua;
+    
+}
+
+.item-1 {
+    grid-area: main1;
+    background-image: url(data:image/jpeg;base64,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) ;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.item-2, .item-3 {
+    grid-area: header;
+    background-image: url(https://www.futuro.cl/wp-content/uploads/2019/07/Captain-Mjolnir-web.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.item-4, .item-5 {
+    grid-area: side;
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b4a233fc-7fbb-4689-9ff6-b6c548541f65/dcqs2bb-ecdbd473-1862-4518-8587-e883a53828a5.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I0YTIzM2ZjLTdmYmItNDY4OS05ZmY2LWI2YzU0ODU0MWY2NVwvZGNxczJiYi1lY2RiZDQ3My0xODYyLTQ1MTgtODU4Ny1lODgzYTUzODI4YTUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XxmDZmCSs613B5XmsonSan6GvypF627-DQHbS0VHLg4);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+
+.item-6 {
+    grid-area: main;
+    background-image: url(https://sm.ign.com/ign_latam/screenshot/default/avendg-1_2hn5.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.item-7 {
+    grid-area: main2;
+    background-image: url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2019/04/thor-chris-hemsworth.jpg?);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+
+.item-8 {
+    grid-area: main3;
+    background-image: url(https://media.vandal.net/i/1200x1200/7-2023/20237101553386_1.jpg);
+    background-size: cover;
+    background-position: center;
+  
+}
+
+
+.item-9 {
+    grid-area: main4;
+    background-image: url(https://amc-theatres-res.cloudinary.com/image/upload/c_limit,w_950/f_auto/q_auto/v1575298544/amc-cdn/general/2eac3f1e-0941-4181-86d3-978de800b3ab/AMCPromo_blackwidow.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}

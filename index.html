@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="CSS/formulario.css" />
+      <title>Formulario</title>
+   </head>
+   <body>
+      <div id="container">
+         <header>
+            <h1 id="title">Formulario de Sugerencias</h1>
+            <p id="description">Ayuda a mejorar nuestra pagina llenando el siguiente formulario</p>
+         </header>
+         <main>
+            <form id="survey-form" method="POST" action="grids.html">
+               <div id="grupo-form">
+                  <label for="name" id="name-label">Nombre</label>
+                  <input type="text" name="name" id="name" placeholder="Introduzca su nombre" required />
+               </div>
+               <div id="grupo-form">
+                  <label for="password" id="name-label">Contraseña</label>
+                  <input type="password" name="password" id="password" placeholder="Introduzca una contraseña" required />
+               </div>
+               <div id="grupo-form">
+                  <label for="email" id="email-label">Correo</label>
+                  <input type="email" name="email" id="email" placeholder="Ingrese su correo" required />
+               </div>
+               <div id="grupo-form">
+                  <label for="number" id="number-label">Edad</label>
+                  <input type="number" name="edad" id="number" placeholder="Ingrese su edad" min="12" max="99" required />
+               </div>
+               <div id="grupo-form">
+                  <label for="color">Seleccione un color</label>
+                  <input type="color" name="color" id="color">
+               </div>
+               <div id="grupo-form">
+                  <label for="hora">Seleccione una hora</label>
+                  <input type="time" name="hora" id="hora">
+               </div>
+               <div id="grupo-form">
+                  <label for="dropdown">Seleccione nivel de Estudio</label>
+                  <select name="Nivel_estudios" id="dropdown">
+                     <option value="Secundaria">Secundaria</option>
+                     <option value="Preparatoria">Preparatoria</option>
+                     <option value="Preparatoria Tecnica">Preparatoria Tecnica</option>
+                     <option value="Universidad">Universidad</option>
+                  </select>
+               </div>
+               <div id="grupo-form">
+                  <p>Seleccione su sexo</p>
+                  <div id="radio-form">
+                     <label><input type="radio" name="sexo" value="mujer" /> Mujer</label>
+                     <label><input type="radio" name="sexo" value="hombre" /> Hombre</label>
+                     <label><input type="radio" name="sexo" value="otro" /> Otro</label>
+                  </div>
+               </div>
+               <div id="grupo-form">
+                  <p>¿Qué te gusta más de la página?</p>
+                  <label><input type="checkbox" name="like" value="diseño" /> Diseño</label>
+                  <label><input type="checkbox" name="like" value="contenido" /> Contenido</label>
+                  <label><input type="checkbox" name="like" value="imagenes" /> Imágenes</label>
+               </div>
+               <div id="grupo-form">
+                  <textarea name="sugerencias" id="textarea" cols="50" rows="10" placeholder="Sugerencias Aquí"></textarea>
+               </div>
+               <input type="submit" value="Enviar" id="submit" />
+            </form>
+         </main>
+      </div>
+   </body>
+</html>

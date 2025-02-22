@@ -1,0 +1,99 @@
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #005F5F, #014F30);
+    color: aliceblue;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#container {
+   width: 50vw;
+   margin: auto;
+   padding: 20px 10px;
+}
+
+header {
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+   justify-content: center;
+   padding-bottom: 50px;
+}
+
+#survey-form {
+   background-color: rgba(0, 0, 0, 0.315);
+   border-radius: 8px;
+   padding: 20px 40px;
+}
+
+#grupo-form-doble {
+   display: flex;
+   justify-content: space-between;
+}
+
+#grupo-form{
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 15px; 
+}
+
+#grupo-form label{
+   font-size: 16px;
+   font-weight: 600;
+}
+
+#grupo-form input,
+#grupo-form select{
+   height: 2.8rem;
+   padding: 5px;
+   font-size: 16px;
+   border-radius: 5px;
+   margin: 5px 0;
+}
+
+#grupo-form input:hover{
+   border-width: 5px;
+   border-color: black;
+}
+
+#grupo-form p{
+   font-size: 16px;
+   font-weight: 600;
+}
+
+#grupo-radio-form {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#grupo-radio-form label{
+   font-weight: initial;
+}
+
+#grupo-radio-form input {
+   width: 1rem;
+}
+
+textarea {
+   resize: none;
+   padding: 10px;
+}
+
+#submit {
+   width: 100%;
+   height: 2rem;
+   border-radius: 5px;
+   border: 0px solid transparent;
+}
+#submit:hover{
+    background: darkcyan;
+}
